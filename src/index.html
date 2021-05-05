@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pdf generator</title>
+  <link rel="stylesheet" href="./styles/_global.scss">
+  <script defer src="./js/pdf.js"></script>
+</head>
+<body>
+  <div class="pdf">
+    <header class="pdf__header">
+      <h1 class="title">GENDARMERIE
+        <br/>
+        DE <span>NOM BRIGADE </span>(00) 
+      </h1>
+    </header>
+    <main class="pdf__main">
+      <section class="urgences">
+        <header>
+          <img src="./assets/img/cloche@300x.png" alt="cloche">
+          <h2>URGENCES</h2>
+          <img src="./assets/img/cloche@300x.png" alt="cloche">
+        </header>
+        <main>
+          <div class="urgences__time">
+            <p>24H/24 - 7J/7</p>
+          </div>
+          <div class="urgences__tuto">
+            <div>
+              <p>
+                EN CAS D’URGENCE
+                <br/>
+                APPUYEZ SUR
+                <br/>
+                LE <span>BOUTON D’APPEL</span>
+                <br/>
+                DE L’INTERPHONE POUR
+                <br/>
+                ÊTRE MIS EN RELATION
+                <br/>
+                AVEC UN OPÉRATEUR
+              </p>
+              <img src="./assets/img/interphone@300x.png" alt="interphone">
+            </div>
+            <p>OU</p>
+            <div>
+              <p>APPELEZ
+                <br/>
+                IMMÉDIATEMENT PAR
+                <br/>
+                <span>TÉLÉPHONE</span> le 17
+              </p>
+              <img class="tel" src="./assets/img/appel@300x.png" alt="téléphone">
+            </div>
+          </div>
+
+          <!-- same tuto block but in english -->
+
+          <div class="urgences__tuto urgences__tuto--en"> 
+            <div>
+              <p>IN CASE OF EMERGENCY
+                <br/>
+                PRESS THE
+                <br/>
+                <span>CALL BUTTON</span>
+                <br/>
+                TO TALK TO AN OPERATOR
+              </p>
+              <img src="./assets/img/interphone@300x.png" alt="interphone">
+            </div>
+            <p>OR</p>
+            <div>
+              <p><span>PHONE</span> 112</p>
+              <img class="tel" src="./assets/img/appel@300x.png" alt="téléphone">
+            </div>
+          </div>
+        </main>
+      </section>
+      <section class="accueil">
+        <header>
+          <!-- <img src="./assets/svg/gendarme.svg" alt="logo gendarme"> -->
+          <h2>ACCUEIL</h2>
+          <!-- <img src="./assets/svg/gendarme.svg" alt="logo gendarme"> -->
+        </header>
+        <main>
+          <div class="accueil__horaires">
+            <h3>HORAIRES D'OUVERTURE AU PUBLIC</h3>
+          </div>
+          <div>
+            <div class="accueil__tuto">
+              <p>POUR ENTRER, APPUYEZ
+                SUR LE BOUTON D’APPEL
+                DE L’INTERPHONE
+              </p>
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="accueil__rdv">
+              <p>
+                Prendre
+                <br/>
+                rendez-vous
+              </p>
+              <div>Place du QR code</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <!-- <img src="" alt=""> -->
+              <p>00 00 00 00 00</p>
+            </div>
+            <div>
+              <!-- <img src="" alt=""> -->
+              <p>bta.nombrigade@gendarmerie.interieur.gouv.fr</p>
+            </div>
+          </div>
+        </main>
+      </section>
+      <section class="e-services">
+        <header>
+          <!-- <img src="./assets/svg/ordi.svg" alt="logo écran d'ordinateur"> -->
+          <h2>E-SERVICES</h2>
+          <!-- <img src="./assets/svg/ordi.svg" alt="logo écran d'ordinateur"> -->
+        </header>
+        <main>
+          <div class="24h">
+            <p>24H/24 - 7J/7</p>
+          </div>
+          <div class="e-services__gendenligne">
+            <!-- <img src="" alt=""> -->
+            <p>
+              UNE QUESTION ?
+              <br/>
+              BESOIN DE CONTACTER LA GENDARMERIE ?
+            </p>
+            <p>
+              En dehors des cas d’urgence
+              <br/>
+              vous pouvez échanger par messagerie
+              <br/>
+              instantanée avec un gendarme
+              <br/>
+              24H/24 ET 7J/7
+            </p>
+            <div>
+              <!-- <img src="" alt=""> -->
+              <p>www.magendarmerie.fr</p>
+            </div>
+            <div>Place du QR code</div>
+          </div>
+          <div class="e-services__demarches">
+            <div>
+              <!-- <img src="" alt=""> -->
+              <p>
+                <span>demarches.</span>interieur.gouv.fr
+                <br/>
+                MINISTÈRE DE L’INTÉRIEUR
+              </p>
+            </div>
+            <div>
+              <p>SIMPLIFIEZ VOS DÉMARCHES</p>
+              <p>
+                • Remplir une pré-plainte en ligne 
+                <br/>
+                • Effectuer d’autres formalités (perte de documents
+                  <br/>
+                  &ensp;officiels, demande de carte grise…)
+              </p>
+            </div>
+            <div>
+              <div>
+                <!-- <img src="" alt=""> -->
+                <p>
+                  <span>CONNECTEZ-VOUS SUR LE SITE : </span>
+                  <br/>
+                  www.demarches.interieur.gouv.fr
+                </p>
+              </div>
+              <div>QR code</div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </main>
+    <footer class="pdf__footer"></footer>
+  </div>
+  <button>save pdf</button>
+ 
+</body>
+
+</html>

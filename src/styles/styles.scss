@@ -1,0 +1,141 @@
+.pdf {
+  width: 806mm;
+  height: 605mm;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: 112mm;
+    width: 100%;
+    background: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    .title {
+      font-family: 'Bebas Neue book';
+      font-size: 123pt;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      color:#fff;
+      span {
+        font-family: 'Bebas Neue bold';
+      }
+    } 
+  }
+
+  &__main {
+    height: 414mm;
+    width: 100%;
+    display: flex;
+  }
+
+  &__footer {
+    height: 79mm;
+    width: 100%;
+    background: $dark-blue;
+  }
+
+}
+
+.pdf__main {
+  section > header {
+    background: $light-blue;
+    height: 39mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      padding: 0 2rem;
+    }
+  }
+
+  section > main {
+    height: 375mm;
+    width: 100%;
+    padding-top :2rem;
+  }
+  section:first-child, section:nth-child(2) {
+    main {
+      position: relative;
+      border-right: solid 4px $dark-blue;
+      &::after {
+        content: '';
+        height: 100%;
+        width: 0.5mm;
+        position: absolute;
+        right: -2.5mm;
+        bottom: 0;
+        background: $dark-blue;
+        z-index: 1;
+      }
+    }
+    & > header {
+      position: relative;
+      &::after {
+        content: '';
+        height: 100%;
+        width: 0.5mm;
+        position: absolute;
+        right: -2.5mm;
+        bottom: 0;
+        background: #fff;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.urgences {
+  width: 228mm;
+  border-right: solid 1.5mm #fff;
+  text-align: center;
+
+  span {
+    font-family: 'Raleway extra-bold';
+    color: $red;
+  }
+
+  header {  
+    h2 {
+      font-family: 'Bebas Neue bold';
+      font-size: 100pt;
+      color: $red;
+    }
+    img {
+      width: 22mm;
+      height: 26mm;
+    }
+  }
+  &__time {
+      font-family: 'Bebas Neue regular';
+      font-size: 63pt;
+      color: $blue-typo;
+      display: flex;
+      justify-content: center;
+    }
+  &__tuto {
+    p {
+     font-family: 'Raleway semi-bold'; 
+     font-size: 28pt;
+    }
+    img {
+      width: 31mm;
+      height: 52mm;
+    }
+  }
+  img.tel {
+    width: 20mm;
+    height: 20mm;
+  }
+  
+}
+
+.accueil {
+  width: 327mm;
+  border-right: solid 1.5mm #fff;
+}
+
+.e-services {
+  width: 248mm;
+}
