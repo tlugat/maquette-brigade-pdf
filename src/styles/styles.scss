@@ -45,7 +45,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     h2 {
+      font-family: 'Bebas Neue bold';
+      font-size: 100pt;
+      color: $dark-blue;
       padding: 0 2rem;
     }
   }
@@ -84,6 +88,17 @@
       }
     }
   }
+  p > span.red {
+    font-family: 'Raleway extra-bold';
+    color: $red;
+  }
+  .time {
+    font-family: 'Bebas Neue regular';
+    font-size: 63pt;
+    color: $blue-text;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .urgences {
@@ -91,33 +106,21 @@
   border-right: solid 1.5mm #fff;
   text-align: center;
 
-  span {
-    font-family: 'Raleway extra-bold';
-    color: $red;
-  }
-
   header {  
     h2 {
-      font-family: 'Bebas Neue bold';
-      font-size: 100pt;
-      color: $red;
+      color: $red !important;
     }
     img {
       width: 22mm;
       height: 26mm;
     }
   }
-  &__time {
-      font-family: 'Bebas Neue regular';
-      font-size: 63pt;
-      color: $blue-typo;
-      display: flex;
-      justify-content: center;
-    }
+
   &__tuto {
     p {
      font-family: 'Raleway semi-bold'; 
      font-size: 28pt;
+     line-height: 33pt;
     }
     img {
       width: 31mm;
@@ -134,8 +137,176 @@
 .accueil {
   width: 327mm;
   border-right: solid 1.5mm #fff;
+  text-align: center;
+  header {  
+    h2 {
+      font-family: 'Raleway extra-bold';
+      font-size: 80pt;
+      color: $dark-blue;
+    }
+    img {
+      width: 33mm;
+      height: 27mm;
+    }
+  }
+  .horaires {
+    &__title {
+      font-family: 'Raleway extra-bold';
+      font-size: 35pt;
+      color: $blue-text;
+    }
+  }
+  .row-2 {
+    &__tuto {
+    p {
+      font-family: 'Raleway semi-bold'; 
+      font-size: 28pt;
+      line-height: 33pt;
+     }
+     img {
+       width: 25mm;
+       height: 42mm;
+     }
+     
+  }
+  &__rdv {
+    font-family: 'Raleway extra-bold';
+    font-size: 31pt;
+    line-height: 26pt;
+    color: $blue-text;
+  }
+  }
+  
+  .contact {
+    width: 292mm;
+    height: 52mm;
+    background: $light-blue;
+    border-radius: 0 8mm 0 8mm;
+    &__tel {
+      font-family: 'Helvetica Neue';
+      font-size: 44pt;
+      color: $dark-blue;
+      img {
+        width: 20mm;
+        height: 22mm;
+      }
+    }
+    &__email {
+      font-family: 'Raleway semi-bold';
+      font-size: 30pt;
+      color: $dark-blue;
+      img {
+        width: 30mm;
+        height: 20mm;
+      }
+    }
+  }
 }
 
 .e-services {
   width: 248mm;
+  header > img {
+    width: 29mm;
+    height: 27mm;
+  }
+  .gendEnLigne {
+    height: 204mm;
+    width: 208mm;
+    border: solid 1.5mm $light-blue;
+    border-radius: 0 8mm 0 8mm ;
+    text-align: center;
+
+    &__logo {
+      width: 132mm;
+      height: 40mm;
+    }
+    &__text1 {
+      font-family: 'Raleway extra-bold';
+      font-size: 25pt;
+      line-height: 30pt;
+      color: $dark-blue;
+    }
+    &__text2 {
+      font-family: 'Raleway semi-bold';
+      font-size: 22pt;
+      line-height: 30pt;
+      color: #000000;
+      span {
+        font-size: 26pt;
+        font-family: 'Raleway extra-bold';
+        color: $dark-blue;
+      }
+    }
+    &__url {
+      font-family: 'Raleway semi-bold';
+      font-size: 27pt;
+      color: $blue-text;
+      img {
+        width: 15mm;
+        height: 15mm;
+      }
+    }
+    img.flag {
+      width: 25mm;
+      height: 25mm;
+    }
+  }
+
+  .demarches {
+    height: 105mm;
+    width: 208mm;
+    border: solid 1.5mm $light-blue;
+    border-radius: 0 8mm 0 8mm ;
+
+    &__block1 {
+      img {
+        width: 32mm;
+        height: 24mm;
+      }
+      p {
+        font-family: 'Roboto condensed';
+        font-size: 40pt;
+        color: $dark-blue;
+        span.green {
+          color: $green;
+        }
+        span.small {
+          font-size: 21pt;
+        }
+      }
+    }
+    &__block2 {
+      p:first-child {
+        font-size: 25pt;
+        font-family: 'Raleway extra-bold';
+        color: $dark-blue;
+      }
+      p:last-child {
+        font-size: 20pt;
+        font-family: 'Raleway semi-bold';
+        line-height: 24pt;
+        color: #000000;
+      }
+    }
+    &__block3 {
+      .url {
+        img {
+          width: 11mm;
+          height: 11mm;
+        }
+        p {
+          font-size: 20pt;
+          font-family: 'Raleway medium';
+          color: $blue-text;
+
+          span {
+            font-size: 18pt;
+            font-family: 'Raleway extra-bold';
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -13,7 +13,7 @@
     <header class="pdf__header">
       <h1 class="title">GENDARMERIE
         <br/>
-        DE <span>NOM BRIGADE </span>(00) 
+        DE <span class="red">NOM BRIGADE </span>(00) 
       </h1>
     </header>
     <main class="pdf__main">
@@ -24,7 +24,7 @@
           <img src="./assets/img/cloche@300x.png" alt="cloche">
         </header>
         <main>
-          <div class="urgences__time">
+          <div class="urgences__time time">
             <p>24H/24 - 7J/7</p>
           </div>
           <div class="urgences__tuto">
@@ -34,7 +34,7 @@
                 <br/>
                 APPUYEZ SUR
                 <br/>
-                LE <span>BOUTON D’APPEL</span>
+                LE <span class="red">BOUTON D’APPEL</span>
                 <br/>
                 DE L’INTERPHONE POUR
                 <br/>
@@ -50,7 +50,7 @@
                 <br/>
                 IMMÉDIATEMENT PAR
                 <br/>
-                <span>TÉLÉPHONE</span> le 17
+                <span class="red">TÉLÉPHONE</span> le 17
               </p>
               <img class="tel" src="./assets/img/appel@300x.png" alt="téléphone">
             </div>
@@ -64,7 +64,7 @@
                 <br/>
                 PRESS THE
                 <br/>
-                <span>CALL BUTTON</span>
+                <span class="red">CALL BUTTON</span>
                 <br/>
                 TO TALK TO AN OPERATOR
               </p>
@@ -72,7 +72,7 @@
             </div>
             <p>OR</p>
             <div>
-              <p><span>PHONE</span> 112</p>
+              <p><span class="red">PHONE</span> 112</p>
               <img class="tel" src="./assets/img/appel@300x.png" alt="téléphone">
             </div>
           </div>
@@ -80,23 +80,30 @@
       </section>
       <section class="accueil">
         <header>
-          <!-- <img src="./assets/svg/gendarme.svg" alt="logo gendarme"> -->
+          <img src="./assets/img/gendarme-left@300x.png" alt="logo gendarme">
           <h2>ACCUEIL</h2>
-          <!-- <img src="./assets/svg/gendarme.svg" alt="logo gendarme"> -->
+          <img src="./assets/img/gendarme-right@300x.png" alt="logo gendarme">
         </header>
         <main>
-          <div class="accueil__horaires">
-            <h3>HORAIRES D'OUVERTURE AU PUBLIC</h3>
+          <div class="accueil__horaires horaires">
+            <h3 class="horaires__title">
+              HORAIRES D'OUVERTURE
+              <br/>
+              AU PUBLIC
+            </h3>
           </div>
-          <div>
-            <div class="accueil__tuto">
-              <p>POUR ENTRER, APPUYEZ
-                SUR LE BOUTON D’APPEL
+          <div class="accueil__row-2 row__2">
+            <div class="row-2__tuto">
+              <p>
+                POUR ENTRER, APPUYEZ
+                <br/>
+                SUR LE <span class="red">BOUTON D’APPEL</span>
+                <br/>
                 DE L’INTERPHONE
               </p>
-              <!-- <img src="" alt=""> -->
+              <img src="./assets/img/interphone@300x.png" alt="interphone">
             </div>
-            <div class="accueil__rdv">
+            <div class="row-2__rdv">
               <p>
                 Prendre
                 <br/>
@@ -105,13 +112,13 @@
               <div>Place du QR code</div>
             </div>
           </div>
-          <div>
-            <div>
-              <!-- <img src="" alt=""> -->
+          <div class="accueil__contact contact">
+            <div class="contact__tel">
+              <img src="./assets/img/tel@300x.png" alt="téléphone">
               <p>00 00 00 00 00</p>
             </div>
-            <div>
-              <!-- <img src="" alt=""> -->
+            <div class="contact__email">
+              <img src="./assets/img/mail@300x.png" alt="lettre">
               <p>bta.nombrigade@gendarmerie.interieur.gouv.fr</p>
             </div>
           </div>
@@ -119,65 +126,67 @@
       </section>
       <section class="e-services">
         <header>
-          <!-- <img src="./assets/svg/ordi.svg" alt="logo écran d'ordinateur"> -->
+          <img src="./assets/img/ordi@300x.png" alt="logo écran d'ordinateur">
           <h2>E-SERVICES</h2>
-          <!-- <img src="./assets/svg/ordi.svg" alt="logo écran d'ordinateur"> -->
+          <img src="./assets/img/ordi@300x.png" alt="logo écran d'ordinateur">
         </header>
         <main>
-          <div class="24h">
+          <div class="e-services__time time">
             <p>24H/24 - 7J/7</p>
           </div>
-          <div class="e-services__gendenligne">
-            <!-- <img src="" alt=""> -->
-            <p>
+          <div class="e-services__gendEnLigne gendEnLigne">
+            <img class="gendEnLigne__logo" src="./assets/img/gendarmerie-en-ligne@300x.png" alt="logo 'Gendarmerie en ligne'">
+            <p class="gendEnLigne__text1">
               UNE QUESTION ?
               <br/>
               BESOIN DE CONTACTER LA GENDARMERIE ?
             </p>
-            <p>
-              En dehors des cas d’urgence
+            <p class="gendEnLigne__text2">
+              En dehors des cas d’urgence,
               <br/>
               vous pouvez échanger par messagerie
               <br/>
               instantanée avec un gendarme
               <br/>
-              24H/24 ET 7J/7
+              <span>24H/24 ET 7J/7</span>
             </p>
-            <div>
-              <!-- <img src="" alt=""> -->
+            <div class="gendEnLigne__url">
+              <img src="./assets/img/web@300x.png" alt="web logo">
               <p>www.magendarmerie.fr</p>
-            </div>
-            <div>Place du QR code</div>
+              <div>Place du QR code</div>
+            </div> 
+            <img class="flag" src="./assets/img/drapeau-francais@300x.png" alt="drapeau français">
+            <img class="flag" src="./assets/img/drapeau-anglais@300x.png" alt="drapeau anglais">
           </div>
-          <div class="e-services__demarches">
-            <div>
-              <!-- <img src="" alt=""> -->
+          <div class="e-services__demarches demarches">
+            <div class="demarches__block1">
+              <img src="./assets/img/ministere_interieur.png" alt="logo du ministère de l'intérieur">
               <p>
-                <span>demarches.</span>interieur.gouv.fr
+                <span class="green">demarches.</span>interieur.gouv.fr
                 <br/>
-                MINISTÈRE DE L’INTÉRIEUR
+                <span class="small">MINISTÈRE DE L’INTÉRIEUR</span>
               </p>
             </div>
-            <div>
+            <div class="demarches__block2">
               <p>SIMPLIFIEZ VOS DÉMARCHES</p>
               <p>
                 • Remplir une pré-plainte en ligne 
                 <br/>
                 • Effectuer d’autres formalités (perte de documents
-                  <br/>
+                <br/>
                   &ensp;officiels, demande de carte grise…)
               </p>
             </div>
-            <div>
-              <div>
-                <!-- <img src="" alt=""> -->
+            <div class="demarches__block3">
+              <div class="url">
+                <img src="./assets/img/web@300x.png" alt="logo web">
                 <p>
                   <span>CONNECTEZ-VOUS SUR LE SITE : </span>
                   <br/>
                   www.demarches.interieur.gouv.fr
                 </p>
               </div>
-              <div>QR code</div>
+              <div class="qrCode">QR code</div>
             </div>
           </div>
         </main>
