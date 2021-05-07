@@ -8,8 +8,8 @@ const generatePDF = () => {
   html2pdf(source, {
     filename:     "maquette-brigade.pdf",
     image:        { type: "jpeg", quality: 1 },
-    html2canvas:  { dpi: 400, scale: 1, scrollY: 0},
-    jsPDF:        { orientation: 'l', unit: "mm", format: [806, 606],}
+    html2canvas:  { dpi: 300, letterRendering: true, scale: 2, scrollX: 0, scrollY: 0, },
+    jsPDF:        { orientation: 'l', unit: "mm", format: [806, 606]},
     
     })
 }
